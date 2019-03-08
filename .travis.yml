@@ -6,7 +6,7 @@ script:
   - docker images wisehackermonkey/react-example2
 
 before_deploy:
-  - docker login -u wisehackermonkey -p #94underSPOT
+  - docker login -u wisehackermonkey -p '#94underSPOT'
 
 deploy:
   provider: script
