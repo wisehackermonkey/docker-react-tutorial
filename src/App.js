@@ -9,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Hi  <code>src/App.js</code> and save to reload.
+           Welcome to the <code>World</code>
           </p>
           <a
             className="App-link"
@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LearnReact supdating
+            by learning docker cli
           </a>
         </header>
       </div>
