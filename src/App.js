@@ -9,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-           Welcome to the <code>World</code>
+           Hello, welcome to my world
           </p>
           <a
             className="App-link"
@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            by learning docker cli
+            by wisemonkey
           </a>
         </header>
       </div>
