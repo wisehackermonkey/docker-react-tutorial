@@ -2,4 +2,14 @@ sudo: required
 services:
   - docker
 script:
-  - docker build -t react-app .
+  - docker build -t wisehackermonkey/react-example .
+  - docker images wisehackermonkey/react-example
+
+before_deploy:
+  - docker login -u wisehackermonkey -p #94underSPOT
+
+deploy:
+  provider: script
+  script: docker push wisehackermonkey/react-example
+  on:
+    branch: master
