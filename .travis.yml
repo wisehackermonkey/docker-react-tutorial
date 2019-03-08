@@ -2,14 +2,14 @@ sudo: required
 services:
   - docker
 script:
-  - docker build -t wisehackermonkey/react-example2 .
-  - docker images wisehackermonkey/react-example2
+  - docker build -t wisehackermonkey/react-example2-1 .
+  - docker images wisehackermonkey/react-example2-1
 
 before_deploy:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 deploy:
   provider: script
-  script: docker push wisehackermonkey/react-example2
+  script: docker push wisehackermonkey/react-example2-1
   on:
     branch: master
